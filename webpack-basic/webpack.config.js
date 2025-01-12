@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
@@ -7,9 +8,9 @@ module.exports = {
     path: path.join(__dirname, './dist'),
     filename: '[name].[contenthash:8].js',
     chunkFilename: '[id].[contenthash:8].js',
-    clean: true,
+    clean: true
   },
-  plugins: [new ESLintPlugin()],
+  plugins: [new ESLintPlugin(), new HtmlWebpackPlugin()],
   module: {
     rules: [
       {
@@ -18,10 +19,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-    ],
-  },
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
+  }
 };
