@@ -1,0 +1,2 @@
+- vue-loader: 加载器, 用来处理`.vue`文件
+- vue-template-compiler: vue 模板编译工具, 会将 template 转换成渲染函数, 但在 vue3 中已经换成 `@vue/compiler-sfc`
