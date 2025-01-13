@@ -7,6 +7,10 @@ module.exports = function (env, arg) {
   console.log(env, arg);
 
   return {
+    devServer: {
+      hot: true,
+      open: true
+    },
     entry: path.join(__dirname, './src/index.js'),
     output: {
       path: path.join(__dirname, './dist'),

@@ -1,8 +1,10 @@
 {
-  "name": "webpack-basic",
+  "name": "webpack-style",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "serve:dev": "npx webpack serve --mode=development",
+    "serve:prod": "npx webpack serve --mode=production",
     "build:dev": "npx webpack --mode=development",
     "build:prod": "npx webpack --mode=production"
   },
@@ -27,7 +29,8 @@
     "sass-loader": "^16.0.4",
     "style-loader": "^4.0.0",
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
     "eslint-webpack-plugin": "^4.2.0"
