@@ -17,7 +17,10 @@ module.exports = function (env, arg) {
     plugins: [
       new MiniCssExtractPlugin(),
       new ESLintPlugin(),
-      new HtmlWebpackPlugin()
+      new HtmlWebpackPlugin({
+        title: 'index.html',
+        template: path.join(__dirname, './public/index.html')
+      })
     ],
     module: {
       rules: [

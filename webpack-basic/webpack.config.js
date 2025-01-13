@@ -10,7 +10,13 @@ module.exports = {
     chunkFilename: '[id].[contenthash:8].js',
     clean: true
   },
-  plugins: [new ESLintPlugin(), new HtmlWebpackPlugin()],
+  plugins: [
+    new ESLintPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'index.html',
+      template: path.join(__dirname, './public/index.html')
+    })
+  ],
   module: {
     rules: [
       {
