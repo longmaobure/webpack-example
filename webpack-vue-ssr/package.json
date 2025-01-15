@@ -1,0 +1,29 @@
+{
+  "name": "webpack-vue-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "npx webpack --config ./webpack.client.js",
+    "build:server": "npx webpack --config ./webpack.server.js ",
+    "node:server":"node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "vue-loader": "^17.4.2",
+    "vue-style-loader": "^4.1.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0",
+    "webpack-manifest-plugin": "^5.0.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "vue": "^3.5.13"
+  }
+}

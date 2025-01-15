@@ -1,0 +1,4 @@
+- @vue/server-renderer: vue 的服务器渲染器, 从 `3.2.13+`开始, 就作为主 vue 包的依赖项包含在内, 通过`vue/server-renderer`访问
+- webpack-manifest-plugin: 用来记录产物分布
+- webpack-merge: 用来合并 webpack 的配置文件
+- vue-style-loader: 将 css 通过 style 标签注入到页面中; 基于 style-loader, 但对 ssr 的支持比 style-loader 更强 
